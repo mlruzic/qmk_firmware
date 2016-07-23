@@ -155,7 +155,7 @@ void matrix_scan_user(void) {
     if(host_keyboard_leds() & (1<<USB_LED_CAPS_LOCK)) {
         ergodox_right_led_2_on();
     }
-    if(IS_LAYER_ON(DVORAK)){
+    if(IS_LAYER_ON(COLEMAK)){
         ergodox_right_led_3_on();
     }
 };
