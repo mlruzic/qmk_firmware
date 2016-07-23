@@ -3,13 +3,13 @@
 #include "action_layer.h"
 
 #define BASE 0 // default layer
-#define DVORAK 1
+#define COLEMAK 1
 #define SYM 2 // symbols
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * | Esc    |   1  |   2  |   3  |   4  |   5  |  L2  |           |DVORAK|   6  |   7  |   8  |   9  |   0  | Home   |
+ * | Esc    |   1  |   2  |   3  |   4  |   5  |  L2  |           | CLMK |   6  |   7  |   8  |   9  |   0  | Home   |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * | Tab    |   Q  |   W  |   E  |   R  |   T  |INSERT|           |      |   Y  |   U  |   I  |   O  |   P  | End    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 																KC_SPC,
 									          MO(SYM), KC_BSPC, KC_DELETE,
 	// right hand
-	TG(DVORAK), KC_6,    KC_7,   KC_8,    KC_9,    KC_0,    KC_HOME,
+	TG(COLEMAK),KC_6,    KC_7,   KC_8,    KC_9,    KC_0,    KC_HOME,
 	KC_NO,      KC_Y,    KC_U,   KC_I,    KC_O,    KC_P,    KC_END,
 		        KC_H,    KC_J,   KC_K,    KC_L,    KC_SCLN, KC_ENT,
 	KC_NO,      KC_N,    KC_M,   KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
@@ -68,7 +68,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 |      |      |      |       |      |        |      |
  *                                 `--------------------'       `----------------------'
  */
-[DVORAK] = KEYMAP(
+[COLEMAK] = KEYMAP(
     // left hand
     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
     KC_TRNS, KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,   KC_TRNS,
